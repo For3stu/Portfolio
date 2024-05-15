@@ -5,25 +5,182 @@
 
 body {
     background-color: #FFC55A;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.title{
+/* Top Container */
+
+.top-container {
     height: 100vh;
-}
-.container{
-    
-}
-
-#triangle{
-    
-    
-    width: 0;
-	height: 0;
-	border-left: 95vh solid transparent;
-	border-right: 95vh solid transparent;
-	border-bottom: 95vh solid #FC4100;
-}
-
-.container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-triangle{
+	border-left: 65vh solid transparent;
+	border-right: 65vh solid transparent;
+	border-bottom: 95vh solid #FC4100;
+    padding-top: 5vh;
+}
+
+.snow-container{
+    position: absolute;
+	border-left: 5vh solid transparent;
+	border-right: 5vh solid transparent;
+	border-bottom: 7vh solid white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cloud-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cloud {
+    position: absolute;
+    width: 20%;
+}
+
+#cloud1 {
+    left: 200px;
+    bottom: 80px;
+}
+
+#cloud2 {
+    right: 100px;
+    bottom: 200px;
+}
+
+#cloud3 {
+    right: 280px;
+    top: 100px
+}
+
+.cloud img {
+    width: 100%;
+}
+
+
+.Header-Text {
+    position: absolute;
+    width: 50%;
+    bottom: 35vh;
+    left: 25vw;
+    color: white;
+    font-family: "Nanum Brush Script";
+    font-size: 5vh;
+    text-align: center;
+}
+
+.H2-Header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 3vh;
+}
+
+/* Section About me */
+
+.About-container{
+    height: 100vh;
+    display: flex;
+}
+
+.Trapezoid{
+    border-bottom: 100vh solid #FC4100;;
+    border-left: 20vw solid transparent;
+    border-right: 20vw solid transparent;
+    height: 0;
+    width: 100vw;
+}
+
+.border-picture{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    margin: 10% auto auto auto;
+}
+
+.Image-cartridge{
+    height: 70%;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+}
+
+.border-picture p{
+    margin: auto;
+    width: 18em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 20px;
+}
+
+.border-picture .Pin{
+    width: 10%;
+}
+
+/* Section Big Projects */
+
+.Big-container{
+    background-color: #FC4100;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+}
+
+.Title-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 197, 90);
+    height: 20vh;
+    width: 40vw;
+    margin: 2% auto;
+}
+
+.div-pin{
+    display: flex;
+    justify-content: space-between;
+}
+
+img.Pin {
+    width: 5%;
+}
+
+.Title{
+    height: 50%;
+    margin: auto;
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+}
+
+.Grid-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.border-bigprojects{
+    height: 60vh;
+    width: 50vh;
+    background-color: white;
+    margin: auto;
+}
+
+.border-bigprojects .Pin{
+    width: 8%;
+}
+
+.border-bigprojects p{
+    margin: auto;
+    width: 18em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 20px;
 }
