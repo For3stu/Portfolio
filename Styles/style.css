@@ -128,7 +128,6 @@ body {
 
 .Big-container{
     background-color: #FC4100;
-    width: 100vw;
     height: 100vh;
     padding-top: 5vh;
 }
@@ -137,9 +136,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 197, 90);
-    height: 20vh;
+    height: 15vh;
     width: 40vw;
-    margin: 2% auto;
+    margin: 2% auto 5% auto;
 }
 
 .div-pin{
@@ -178,9 +177,79 @@ img.Pin {
 
 .border-bigprojects p{
     margin: auto;
-    width: 18em;
+    width: 20em;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 20px;
+}
+
+.Image-projects{
+    height: 70%;
+    width: 80%;
+    margin: 0 10% 2% 10%;
+}
+
+.Badge{
+    width: 20%;
+    margin-left: 2%;
+}
+
+/* Section other projects */
+
+.Other-container{
+    background-color: #FC4100;
+    height: 100vh;
+    padding-top: 5vh;
+}
+
+.Grid-other-projects{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #FFC55A;
+    margin: auto 10%;
+    height: 55%;
+}
+
+.border-otherprojects{
+    height: 45vh;
+    width: 35vh;
+    background-color: white;
+    margin: 10% auto auto auto;
+}
+
+.border-otherprojects .Pin{
+    width: 8%;
+}
+
+.border-otherprojects p{
+    margin: auto;
+    width: 20em;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* Section Footer */
+
+.container-footer {
+    background-color:#FFC55A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    line-height: ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
